@@ -277,7 +277,7 @@ function MyComputer({ onClose }) {
                   />
                   <div className="com__content__right__card__img-container">
                     <div className="com__content__right__card__text">
-                      Shared Documents
+                      Article series layout
                     </div>
                   </div>
                 </div>
@@ -289,7 +289,43 @@ function MyComputer({ onClose }) {
                   />
                   <div className="com__content__right__card__img-container">
                     <div className="com__content__right__card__text">
-                      User's Documents
+                      Identification
+                    </div>
+                  </div>
+                </div>
+                <div className="com__content__right__card__item">
+                  <img
+                    src={folder}
+                    alt="folder"
+                    className="com__content__right__card__img"
+                  />
+                  <div className="com__content__right__card__img-container">
+                    <div className="com__content__right__card__text">
+                      yet another haha
+                    </div>
+                  </div>
+                </div>
+                <div className="com__content__right__card__item">
+                  <img
+                    src={folder}
+                    alt="folder"
+                    className="com__content__right__card__img"
+                  />
+                  <div className="com__content__right__card__img-container">
+                    <div className="com__content__right__card__text">
+                      Homecoming
+                    </div>
+                  </div>
+                </div>
+                <div className="com__content__right__card__item">
+                  <img
+                    src={folder}
+                    alt="folder"
+                    className="com__content__right__card__img"
+                  />
+                  <div className="com__content__right__card__img-container">
+                    <div className="com__content__right__card__text">
+                      Acupuncture
                     </div>
                   </div>
                 </div>
