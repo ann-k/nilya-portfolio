@@ -17,6 +17,7 @@ import winamp from 'assets/windowsIcons/winamp.png';
 import paintLarge from 'assets/windowsIcons/680(32x32).png';
 import paint from 'assets/windowsIcons/680(16x16).png';
 import folderLarge from 'assets/windowsIcons/318(32x32).png';
+import rickrollLarge from 'assets/windowsIcons/rickroll(32x32).png';
 
 // const gen = () => {
 //   let id = -1;
@@ -184,7 +185,7 @@ export const defaultIconState = [
   {
     id: 9,
     appId: 'rickroll',
-    icon: folderLarge,
+    icon: rickrollLarge,
     title: 'Rickroll',
     component: InternetExplorer,
   },
