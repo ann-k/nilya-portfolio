@@ -183,9 +183,9 @@ export const defaultIconState = [
   },
   {
     id: 9,
-    appId: 'surprise',
+    appId: 'rickroll',
     icon: folderLarge,
-    title: 'Surprise',
+    title: 'Rickroll',
     component: InternetExplorer,
   },
 ];
@@ -275,9 +275,9 @@ export const appSettings = {
     maximized: window.innerWidth < 800,
     multiInstance: true,
   },
-  Surprise: {
-    appId: 'surprise',
-    website: 'surprise',
+  Rickroll: {
+    appId: 'rickroll',
+    website: 'rickroll',
     header: {
       icon: iePaper,
       title: 'InternetExplorer',

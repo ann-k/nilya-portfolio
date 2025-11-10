@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import styled from 'styled-components';
 
-import { WindowDropDowns, Google, Surprise, ExternalLink } from 'components';
+import { WindowDropDowns, Google, Rickroll, ExternalLink } from 'components';
 import dropDownData from './dropDownData';
 import ie from 'assets/windowsIcons/ie-paper.png';
 import printer from 'assets/windowsIcons/17(32x32).png';
@@ -23,7 +23,7 @@ import windows from 'assets/windowsIcons/windows.png';
 import dropdown from 'assets/windowsIcons/dropdown.png';
 
 function Website({ website, route, query, onSearch, goMain }) {
-  if (website === 'surprise') return <Surprise />;
+  if (website === 'rickroll') return <Rickroll />;
   if (website === 'boys')
     return <ExternalLink title="Boys" src="https://wishious.de/Boys" />;
   if (website === 'band')

@@ -1,7 +1,7 @@
 import React from 'react';
 import styled from 'styled-components';
 
-function Surprise({ className }) {
+function Rickroll({ className }) {
   return (
     <div className={className}>
       <iframe
@@ -17,7 +17,7 @@ function Surprise({ className }) {
   );
 }
 
-export default styled(Surprise)`
+export default styled(Rickroll)`
   height: 100%;
   width: 100%;
   display: flex;
