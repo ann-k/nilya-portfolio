@@ -168,13 +168,6 @@ export const defaultIconState = [
     component: InternetExplorer,
   },
   {
-    id: 6,
-    appId: 'boys',
-    icon: folderLarge,
-    title: 'Boys',
-    component: InternetExplorer,
-  },
-  {
     id: 7,
     appId: 'surprise',
     icon: folderLarge,
