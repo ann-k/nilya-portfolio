@@ -176,17 +176,13 @@ function InternetExplorer({ onClose, website }) {
       </section>
       <div className="ie__content">
         <div className="ie__content__inner">
-<<<<<<< HEAD
           <Website
             website={website}
-=======
-          {/* <Google
->>>>>>> refs/remotes/origin/master
             route={state.route}
             query={state.query}
             onSearch={onSearch}
             goMain={goMain}
-          /> */}
+          />
         </div>
       </div>
       <footer className="ie__footer">
