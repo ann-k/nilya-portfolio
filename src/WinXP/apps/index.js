@@ -169,6 +169,20 @@ export const defaultIconState = [
   },
   {
     id: 7,
+    appId: 'band',
+    icon: folderLarge,
+    title: 'Band affairs',
+    component: InternetExplorer,
+  },
+  {
+    id: 8,
+    appId: 'studio-toto',
+    icon: folderLarge,
+    title: 'Studio Toto',
+    component: InternetExplorer,
+  },
+  {
+    id: 9,
     appId: 'surprise',
     icon: folderLarge,
     title: 'Surprise',
@@ -201,6 +215,48 @@ export const appSettings = {
   Boys: {
     appId: 'boys',
     website: 'boys',
+    header: {
+      icon: iePaper,
+      title: 'InternetExplorer',
+    },
+    component: InternetExplorer,
+    defaultSize: {
+      width: 700,
+      height: 500,
+    },
+    defaultOffset: {
+      x: 140,
+      y: 30,
+    },
+    resizable: true,
+    minimized: false,
+    maximized: window.innerWidth < 800,
+    multiInstance: true,
+  },
+  'Band affairs': {
+    appId: 'band',
+    website: 'band',
+    header: {
+      icon: iePaper,
+      title: 'InternetExplorer',
+    },
+    component: InternetExplorer,
+    defaultSize: {
+      width: 700,
+      height: 500,
+    },
+    defaultOffset: {
+      x: 140,
+      y: 30,
+    },
+    resizable: true,
+    minimized: false,
+    maximized: window.innerWidth < 800,
+    multiInstance: true,
+  },
+  'Studio Toto': {
+    appId: 'studio-toto',
+    website: 'studio-toto',
     header: {
       icon: iePaper,
       title: 'InternetExplorer',

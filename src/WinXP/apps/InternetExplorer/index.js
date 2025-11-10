@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import styled from 'styled-components';
 
-import { WindowDropDowns, Google, Surprise } from 'components';
+import { WindowDropDowns, Google, Surprise, ExternalLink } from 'components';
 import dropDownData from './dropDownData';
 import ie from 'assets/windowsIcons/ie-paper.png';
 import printer from 'assets/windowsIcons/17(32x32).png';
@@ -24,7 +24,14 @@ import dropdown from 'assets/windowsIcons/dropdown.png';
 
 function Website({ website, route, query, onSearch, goMain }) {
   if (website === 'surprise') return <Surprise />;
-
+  if (website === 'boys')
+    return <ExternalLink title="Boys" src="https://wishious.de/Boys" />;
+  if (website === 'band')
+    return <ExternalLink title="Band affairs" src="https://wishious.de/Kazu" />;
+  if (website === 'studio-toto')
+    return (
+      <ExternalLink title="Studio Toto" src="https://studio-toto.github.io" />
+    );
   return (
     <Google route={route} query={query} onSearch={onSearch} goMain={goMain} />
   );
