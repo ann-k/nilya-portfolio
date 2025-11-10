@@ -24,6 +24,7 @@ function Windows({
           onMouseUpClose={onClose}
           onMouseUpMinimize={onMinimize}
           onMouseUpMaximize={onMaximize}
+          website={app.website}
           isFocus={focusedAppId === app.id} // for styledWindow
           {...app}
         />
@@ -48,6 +49,7 @@ const Window = memo(function({
   zIndex,
   isFocus,
   className,
+  website,
 }) {
   function _onMouseDown() {
     onMouseDown(id);
@@ -133,6 +135,7 @@ const Window = memo(function({
         {component({
           onClose: _onMouseUpClose,
           onMinimize: _onMouseUpMinimize,
+          website,
           isFocus,
           ...injectProps,
         })}

@@ -22,7 +22,9 @@ import stop from 'assets/windowsIcons/stop.png';
 import windows from 'assets/windowsIcons/windows.png';
 import dropdown from 'assets/windowsIcons/dropdown.png';
 
-function InternetExplorer({ onClose }) {
+function InternetExplorer({ onClose, website }) {
+  console.log(website);
+
   const [state, setState] = useState({
     route: 'main',
     query: '',
@@ -165,12 +167,12 @@ function InternetExplorer({ onClose }) {
       </section>
       <div className="ie__content">
         <div className="ie__content__inner">
-          <Google
+          {/* <Google
             route={state.route}
             query={state.query}
             onSearch={onSearch}
             goMain={goMain}
-          />
+          /> */}
         </div>
       </div>
       <footer className="ie__footer">

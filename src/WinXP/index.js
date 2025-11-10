@@ -217,7 +217,7 @@ function WinXP() {
   }
   function onDoubleClickIcon(component) {
     const appSetting = Object.values(appSettings).find(
-      setting => setting.component === component,
+      setting => setting.appId === component,
     );
     dispatch({ type: ADD_APP, payload: appSetting });
   }
@@ -232,6 +232,7 @@ function WinXP() {
     dispatch({ type: FOCUS_DESKTOP });
   }
   function onClickMenuItem(o) {
+    console.log('onClickMenuItem');
     if (o === 'Internet')
       dispatch({ type: ADD_APP, payload: appSettings['Internet Explorer'] });
     else if (o === 'Minesweeper')
@@ -244,6 +245,8 @@ function WinXP() {
       dispatch({ type: ADD_APP, payload: appSettings.Winamp });
     else if (o === 'Paint')
       dispatch({ type: ADD_APP, payload: appSettings.Paint });
+    else if (o === 'Nilya')
+      dispatch({ type: ADD_APP, payload: appSettings.Nilya });
     else if (o === 'Log Off')
       dispatch({ type: POWER_OFF, payload: POWER_STATE.LOG_OFF });
     else if (o === 'Turn Off Computer')
