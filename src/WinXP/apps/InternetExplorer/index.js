@@ -22,7 +22,21 @@ import stop from 'assets/windowsIcons/stop.png';
 import windows from 'assets/windowsIcons/windows.png';
 import dropdown from 'assets/windowsIcons/dropdown.png';
 
-function InternetExplorer({ onClose }) {
+function Website({ website, route, query, onSearch, goMain }) {
+  if (website === 'google') {
+    return (
+      <Google route={route} query={query} onSearch={onSearch} goMain={goMain} />
+    );
+  }
+
+  return (
+    <Google route={route} query={query} onSearch={onSearch} goMain={goMain} />
+  );
+}
+
+function InternetExplorer({ onClose, website }) {
+  console.log(website);
+
   const [state, setState] = useState({
     route: 'main',
     query: '',
@@ -53,6 +67,7 @@ function InternetExplorer({ onClose }) {
       default:
     }
   }
+
   return (
     <Div>
       <section className="ie__toolbar">
@@ -165,7 +180,8 @@ function InternetExplorer({ onClose }) {
       </section>
       <div className="ie__content">
         <div className="ie__content__inner">
-          <Google
+          <Website
+            website={website}
             route={state.route}
             query={state.query}
             onSearch={onSearch}

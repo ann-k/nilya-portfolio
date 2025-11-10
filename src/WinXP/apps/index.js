@@ -17,15 +17,15 @@ import winamp from 'assets/windowsIcons/winamp.png';
 import paintLarge from 'assets/windowsIcons/680(32x32).png';
 import paint from 'assets/windowsIcons/680(16x16).png';
 
-const gen = () => {
-  let id = -1;
-  return () => {
-    id += 1;
-    return id;
-  };
-};
-const genId = gen();
-const genIndex = gen();
+// const gen = () => {
+//   let id = -1;
+//   return () => {
+//     id += 1;
+//     return id;
+//   };
+// };
+// const genId = gen();
+// const genIndex = gen();
 export const defaultAppState = [
   // {
   //   component: InternetExplorer,
@@ -113,6 +113,7 @@ export const defaultAppState = [
 export const defaultIconState = [
   {
     id: 0,
+    appId: 'internet',
     icon: ie,
     title: 'Internet Explorer',
     component: InternetExplorer,
@@ -120,6 +121,7 @@ export const defaultIconState = [
   },
   {
     id: 1,
+    appId: 'minesweeper',
     icon: mine,
     title: 'Minesweeper',
     component: Minesweeper,
@@ -127,6 +129,7 @@ export const defaultIconState = [
   },
   {
     id: 2,
+    appId: 'mycomputer',
     icon: computerLarge,
     title: 'My Computer',
     component: MyComputer,
@@ -134,6 +137,7 @@ export const defaultIconState = [
   },
   {
     id: 3,
+    appId: 'notepad',
     icon: notepadLarge,
     title: 'Notepad',
     component: Notepad,
@@ -141,6 +145,7 @@ export const defaultIconState = [
   },
   {
     id: 4,
+    appId: 'winamp',
     icon: winamp,
     title: 'Winamp',
     component: Winamp,
@@ -148,15 +153,46 @@ export const defaultIconState = [
   },
   {
     id: 5,
+    appId: 'paint',
     icon: paintLarge,
     title: 'Paint',
     component: Paint,
     isFocus: false,
   },
+  {
+    id: 6,
+    appId: 'nilya',
+    icon: paintLarge,
+    title: 'Nilya',
+    component: InternetExplorer,
+  },
 ];
 
 export const appSettings = {
   'Internet Explorer': {
+    appId: 'internet',
+    website: 'google',
+    header: {
+      icon: iePaper,
+      title: 'InternetExplorer',
+    },
+    component: InternetExplorer,
+    defaultSize: {
+      width: 700,
+      height: 500,
+    },
+    defaultOffset: {
+      x: 140,
+      y: 30,
+    },
+    resizable: true,
+    minimized: false,
+    maximized: window.innerWidth < 800,
+    multiInstance: true,
+  },
+  Nilya: {
+    appId: 'nilya',
+    website: 'yandex',
     header: {
       icon: iePaper,
       title: 'InternetExplorer',
@@ -176,6 +212,7 @@ export const appSettings = {
     multiInstance: true,
   },
   Minesweeper: {
+    appId: 'minesweeper',
     header: {
       icon: mine,
       title: 'Minesweeper',
@@ -195,6 +232,7 @@ export const appSettings = {
     multiInstance: true,
   },
   Error: {
+    appId: 'error',
     header: {
       icon: error,
       title: 'C:\\',
@@ -216,6 +254,7 @@ export const appSettings = {
     multiInstance: true,
   },
   'My Computer': {
+    appId: 'mycomputer',
     header: {
       icon: computer,
       title: 'My Computer',
@@ -235,6 +274,7 @@ export const appSettings = {
     multiInstance: false,
   },
   Notepad: {
+    appId: 'notepad',
     header: {
       icon: notepad,
       title: 'Untitled - Notepad',
@@ -254,6 +294,7 @@ export const appSettings = {
     multiInstance: true,
   },
   Winamp: {
+    appId: 'winamp',
     header: {
       icon: winamp,
       title: 'Winamp',
@@ -274,6 +315,7 @@ export const appSettings = {
     multiInstance: false,
   },
   Paint: {
+    appId: 'paint',
     header: {
       icon: paint,
       title: 'Untitled - Paint',
