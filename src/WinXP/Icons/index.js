@@ -89,8 +89,14 @@ function Icon({
 
 const IconsContainer = styled.div`
   position: absolute;
-  margin-top: 40px;
-  margin-left: 40px;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  align-items: start;
+  align-content: start;
+  padding: 40px;
+  max-height: 100vh;
+  max-width: 100vw;
 `;
 
 const StyledIcon = styled(Icon)`

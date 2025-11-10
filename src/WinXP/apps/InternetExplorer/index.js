@@ -32,6 +32,20 @@ function Website({ website, route, query, onSearch, goMain }) {
     return (
       <ExternalLink title="Studio Toto" src="https://studio-toto.github.io" />
     );
+  if (website === 'book')
+    return (
+      <ExternalLink
+        title="Article series layout"
+        src="https://wishious.de/book"
+      />
+    );
+  if (website === 'identification')
+    return (
+      <ExternalLink
+        title="Identification"
+        src="https://wishious.de/identification"
+      />
+    );
   return (
     <Google route={route} query={query} onSearch={onSearch} goMain={goMain} />
   );
