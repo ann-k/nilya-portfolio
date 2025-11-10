@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import styled from 'styled-components';
 
-import { WindowDropDowns, Google } from 'components';
+import { WindowDropDowns, Google, Surprise } from 'components';
 import dropDownData from './dropDownData';
 import ie from 'assets/windowsIcons/ie-paper.png';
 import printer from 'assets/windowsIcons/17(32x32).png';
@@ -23,11 +23,7 @@ import windows from 'assets/windowsIcons/windows.png';
 import dropdown from 'assets/windowsIcons/dropdown.png';
 
 function Website({ website, route, query, onSearch, goMain }) {
-  if (website === 'google') {
-    return (
-      <Google route={route} query={query} onSearch={onSearch} goMain={goMain} />
-    );
-  }
+  if (website === 'surprise') return <Surprise />;
 
   return (
     <Google route={route} query={query} onSearch={onSearch} goMain={goMain} />

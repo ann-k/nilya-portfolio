@@ -16,6 +16,7 @@ import notepadLarge from 'assets/windowsIcons/327(32x32).png';
 import winamp from 'assets/windowsIcons/winamp.png';
 import paintLarge from 'assets/windowsIcons/680(32x32).png';
 import paint from 'assets/windowsIcons/680(16x16).png';
+import folderLarge from 'assets/windowsIcons/318(32x32).png';
 
 // const gen = () => {
 //   let id = -1;
@@ -161,9 +162,23 @@ export const defaultIconState = [
   },
   {
     id: 6,
-    appId: 'nilya',
-    icon: paintLarge,
-    title: 'Nilya',
+    appId: 'boys',
+    icon: folderLarge,
+    title: 'Boys',
+    component: InternetExplorer,
+  },
+  {
+    id: 6,
+    appId: 'boys',
+    icon: folderLarge,
+    title: 'Boys',
+    component: InternetExplorer,
+  },
+  {
+    id: 7,
+    appId: 'surprise',
+    icon: folderLarge,
+    title: 'Surprise',
     component: InternetExplorer,
   },
 ];
@@ -190,9 +205,30 @@ export const appSettings = {
     maximized: window.innerWidth < 800,
     multiInstance: true,
   },
-  Nilya: {
-    appId: 'nilya',
-    website: 'yandex',
+  Boys: {
+    appId: 'boys',
+    website: 'boys',
+    header: {
+      icon: iePaper,
+      title: 'InternetExplorer',
+    },
+    component: InternetExplorer,
+    defaultSize: {
+      width: 700,
+      height: 500,
+    },
+    defaultOffset: {
+      x: 140,
+      y: 30,
+    },
+    resizable: true,
+    minimized: false,
+    maximized: window.innerWidth < 800,
+    multiInstance: true,
+  },
+  Surprise: {
+    appId: 'surprise',
+    website: 'surprise',
     header: {
       icon: iePaper,
       title: 'InternetExplorer',
